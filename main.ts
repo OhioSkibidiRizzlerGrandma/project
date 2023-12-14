@@ -73,7 +73,7 @@ controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
         . . . 4 e e f f f f f f e . . . 
         . . . . . . . . . f f f . . . . 
         `],
-    200,
+    100,
     true
     )
 })
@@ -155,7 +155,7 @@ controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
         . . f f f f f f f f f f . . . . 
         . . . f f f . . . f f . . . . . 
         `],
-    200,
+    100,
     true
     )
 })
@@ -231,7 +231,7 @@ controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
         . . . . f f f f f f f f f f . . 
         . . . . . f f . . . f f f . . . 
         `],
-    200,
+    100,
     true
     )
 })
@@ -307,12 +307,11 @@ controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
         . . . . . f f f f f f f . . . . 
         . . . . . . . . . f f f . . . . 
         `],
-    200,
+    100,
     true
     )
 })
 let mySprite: Sprite = null
-mySprite.sayText("Welcome to VocabFood!", 5000, true)
 mySprite = sprites.create(img`
     . . . . . . f f f f . . . . . . 
     . . . . f f f 2 2 f f f . . . . 
@@ -334,3 +333,4 @@ mySprite = sprites.create(img`
 controller.moveSprite(mySprite)
 scene.cameraFollowSprite(mySprite)
 tiles.setCurrentTilemap(tilemap`level2`)
+mySprite.sayText("Welcome to FoodVocab!", 5000, true)
