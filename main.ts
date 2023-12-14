@@ -101,7 +101,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile`, function (sprite, lo
         . e e b b 4 4 4 4 4 4 4 4 e e . 
         . . . c c c c c e e e e e . . . 
         `, SpriteKind.badguy)
-    mySprite2.sayText("Immortality- The ")
+    mySprite2.sayText("")
 })
 controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
     animation.runImageAnimation(
