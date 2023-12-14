@@ -79,7 +79,6 @@ controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile`, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`level4`)
-    mySprite.sayText("Immortality")
 })
 controller.anyButton.onEvent(ControllerButtonEvent.Released, function () {
     animation.stopAnimation(animation.AnimationTypes.All, mySprite)
@@ -313,6 +312,7 @@ controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
     )
 })
 let mySprite: Sprite = null
+mySprite.sayText("Welcome to VocabFood!", 5000, true)
 mySprite = sprites.create(img`
     . . . . . . f f f f . . . . . . 
     . . . . f f f 2 2 f f f . . . . 
